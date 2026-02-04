@@ -22,19 +22,19 @@ export function VarietiesSection() {
           </p>
 
           {/* Rose Varieties Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 md:gap-4 max-w-md sm:max-w-none mx-auto">
             {roseVarieties.map((variety, index) => (
               <div key={index} className="relative group">
-                <div className="aspect-square overflow-hidden rounded-lg shadow-md">
+                <div className="aspect-square overflow-hidden rounded-xl shadow-lg">
                   <Image
                     src={variety.src || "/placeholder.svg"}
                     alt={`Rosa do Deserto ${variety.label}`}
-                    width={300}
-                    height={300}
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover transition-transform group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute bottom-3 left-3 bg-black/70 text-white text-sm md:text-xs px-3 py-1.5 md:py-1 rounded font-medium">
+                <div className="absolute bottom-4 left-4 bg-black/70 text-white text-base md:text-xs px-4 py-2 md:py-1 rounded-md font-semibold">
                   {variety.label}
                 </div>
               </div>
