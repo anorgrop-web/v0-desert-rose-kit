@@ -5,8 +5,8 @@ const kit1Features = [
   "5 Plantas Adultas Enxertadas",
   "Cores: Amarela, Branca, Vermelha, Roxa, Negra",
   "Manual de Re-hidratação e Plantio",
-  "Garantia de Entrega Viva",
-  "Frete Grátis para Sul e Sudeste",
+  "Garantia de Entrega Viva"
+  "Suporte 7 dias por semana",
 ]
 
 const kit2Features = [
@@ -14,7 +14,8 @@ const kit2Features = [
   "Cores: Amarela, Branca, Vermelha, Roxa, Negra",
   "Manual de Re-hidratação e Plantio",
   "Garantia de Entrega Viva",
-  "Frete Grátis para Sul e Sudeste",
+  "Frete Grátis para todo Brasil"
+  "Suporte 7 dias por semana",
 ]
 
 export function PricingSection() {
@@ -27,7 +28,7 @@ export function PricingSection() {
             <div className="p-6 md:p-8">
               {/* Title */}
               <h3 className="text-xl md:text-2xl font-bold text-[#2d8f47] text-center mb-4">
-                Kit Coleção<br/>5 Cores Raras
+                Kit Simples - Coleção<br/>5 Cores Raras
               </h3>
               
               {/* Product Image */}
@@ -81,7 +82,7 @@ export function PricingSection() {
             <div className="p-6 md:p-8">
               {/* Title */}
               <h3 className="text-xl md:text-2xl font-bold text-[#2d8f47] text-center mb-4">
-                Kit Coleção<br/>5 Cores Raras
+                Kit em Dobro - Coleção<br/>5 Cores Raras
               </h3>
               
               {/* Product Image */}
