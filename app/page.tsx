@@ -4,6 +4,7 @@ import {
   VarietiesSection,
   WhyChooseSection,
   ManualSection,
+  AboutSection,
   TestimonialsSection,
   PricingSection,
   FaqSection,
@@ -18,6 +19,7 @@ export default function Home() {
       <VarietiesSection />
       <WhyChooseSection />
       <ManualSection />
+      <AboutSection />
       <TestimonialsSection />
       <PricingSection />
       <FaqSection />
