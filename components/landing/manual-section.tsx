@@ -12,7 +12,7 @@ export function ManualSection() {
             </h2>
             
             <p className="text-white/90 text-sm md:text-base leading-relaxed max-w-md">
-              Não se preocupe com o transporte. Enviamos junto um Guia de Re-hidratação. Ensinamos como 'acordar' sua Rosa do Deserto após a viagem em raiz nua e como preparar o vaso ideal.
+              Não se preocupe com o transporte. Enviamos junto um Guia de Re-hidratação. Ensinamos como 'acordar' sua Rosa do Deserto após a viagem em raiz nua e preparar o vaso ideal.
             </p>
           </div>
 

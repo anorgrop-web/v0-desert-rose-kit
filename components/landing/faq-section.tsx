@@ -6,15 +6,15 @@ import { ChevronRight } from "lucide-react"
 const faqs = [
   {
     question: "Por que elas vêm sem terra e vaso (Raiz Nua)?",
-    answer: "Para garantir a segurança. A terra úmida em caixa fechada pode apodrecer as raízes. Elas aguentam até 20 dias fora da terra tranquilamente. Isso garante que sua planta chegue viva e saudável."
+    answer: "Para garantir a segurança. A terra úmida em caixa fechada pode apodrecer as raízes. Elas aguentam até 20 dias fora da terra tranquilamente."
   },
   {
     question: "Elas já chegam com flor?",
-    answer: "Geralmente enviamos sem folhas e flores para evitar o estresse da viagem. Mas como são adultas, assim que replantadas, voltam a florir rapidamente - geralmente em poucas semanas."
+    answer: "Geralmente enviamos sem folhas e flores para evitar o estresse da viagem. Mas como são adultas, assim que replantadas, voltam a florir rapidamente."
   },
   {
     question: "O que é o Jardim da Cida?",
-    answer: "O Jardim da Cida é uma empresa especializada em cultivo e venda de plantas exóticas, como as Rosas do Deserto Adultas Enxertadas. Garantimos a cor através da enxertia e enviamos plantas maduras prontas para florir."
+    answer: "O Jardim da Cida é uma empresa especializada em produtos para jardinagem e cultivo de plantas exóticas, como as Rosas do Deserto. Oferecemos kits completos de plantas adultas enxertadas com garantia de cor."
   },
   {
     question: "Eu consigo acompanhar minha compra?",

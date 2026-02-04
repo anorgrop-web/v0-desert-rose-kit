@@ -1,11 +1,11 @@
 import Image from "next/image"
 
 const roseVarieties = [
-  { src: "/images/rosa-yellow.jpg", label: "Amarela Ouro" },
-  { src: "/images/rosa-white.jpg", label: "Branca Neve" },
-  { src: "/images/rosa-red.jpg", label: "Vermelha Ferrari" },
-  { src: "/images/rosa-purple.jpg", label: "Roxa Dobrada" },
-  { src: "/images/rosa-black.jpg", label: "Negra Exótica" },
+  { src: "/images/rosa-pink.jpg", label: "Amarela" },
+  { src: "/images/rosa-red.jpg", label: "Branca" },
+  { src: "/images/rosa-purple.jpg", label: "Vermelha" },
+  { src: "/images/rosa-multicolor.jpg", label: "Roxa" },
+  { src: "/images/rosa-multicolor.jpg", label: "Negra" },
 ]
 
 export function VarietiesSection() {
@@ -14,8 +14,7 @@ export function VarietiesSection() {
       <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="border-2 border-dashed border-[#2d8f47] rounded-lg p-6 md:p-8">
           <p className="text-center text-foreground text-sm md:text-base leading-relaxed mb-6">
-            <span className="text-[#2d8f47] font-semibold">Garantia de Cor via Enxertia:</span>{" "}
-            sua Rosa Negra nascerá Negra. Sua Rosa Roxa Dobrada terá pétalas duplas garantidas. Não existe sorte ou azar — você recebe exatamente o que escolheu.
+            <span className="text-[#2d8f47] font-semibold">Garantia de Cor via Enxertia:</span> sua Rosa Negra nascerá Negra. Sem surpresas.
           </p>
           
           <p className="text-center text-foreground font-semibold text-sm md:text-base mb-8">

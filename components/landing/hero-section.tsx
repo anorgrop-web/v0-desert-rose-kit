@@ -18,7 +18,7 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4 text-balance">
-              Tenha um Jardim de Explosão de Cores em Dias: Receba Rosas do Deserto Adultas e Prontas para Florir.
+              Tenha um Jardim de Explosão de Cores em Dias: Receba Rosas do Deserto Adultas e Prontas para Florir
             </h1>
             
             <p className="text-white/90 text-sm md:text-base mb-6 leading-relaxed max-w-md">

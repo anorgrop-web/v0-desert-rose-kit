@@ -14,7 +14,7 @@ const seedImages = [
 
 const features = [
   "5 Rosas do Deserto Adultas (30 a 40cm) prontas para florir",
-  "Cores Garantidas: 1 Amarela, 1 Branca, 1 Vermelha, 1 Roxa e 1 Negra",
+  "Cores Garantidas: Amarela, Branca, Vermelha, Roxa e Negra",
   "Caudex Bem Formado: Base grossa e escultural",
   "Sanidade Total: Livres de pragas e tratadas com fungicida",
   "Envio Técnico: Preparadas em Raiz Nua para aguentar a viagem",
