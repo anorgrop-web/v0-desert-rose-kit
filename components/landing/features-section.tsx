@@ -32,7 +32,7 @@ export function FeaturesSection() {
           {/* Features List */}
           <div className="flex-1">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-2">
-              O que vem no seu Kit Premium de 5 Cores?
+              Um mix completo para quem ama rosas de cores raras e exclusivas
             </h2>
             
             <p className="text-muted-foreground text-sm md:text-base mb-6 leading-relaxed">
