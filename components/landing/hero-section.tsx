@@ -37,7 +37,7 @@ export function HeroSection() {
           <div className="flex-1 relative">
             <div className="relative w-full max-w-md mx-auto">
               <Image
-                src="/images/hero-product.jpg"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/imagem%20hero.png"
                 alt="Kit de Germinação de Rosas do Deserto - Manual, sementes, bandeja e fertilizante"
                 width={500}
                 height={400}
