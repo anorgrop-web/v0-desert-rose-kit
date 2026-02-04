@@ -31,13 +31,13 @@ export function PricingSection() {
               </h3>
               
               {/* Product Image */}
-              <div className="w-40 h-40 mx-auto mb-6">
+              <div className="w-56 h-56 md:w-48 md:h-48 mx-auto mb-6">
                 <Image
-                  src="/images/kit-product.jpg"
-                  alt="Kit Florescer Rosas do Deserto"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover rounded-lg"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Oferta%201.png"
+                  alt="Kit Coleção 5 Cores Raras"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
 
@@ -85,13 +85,13 @@ export function PricingSection() {
               </h3>
               
               {/* Product Image */}
-              <div className="w-40 h-40 mx-auto mb-6">
+              <div className="w-56 h-56 md:w-48 md:h-48 mx-auto mb-6">
                 <Image
-                  src="/images/kit-product.jpg"
-                  alt="Kit 2 Florescer Rosas do Deserto"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover rounded-lg"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Oferta%201.png"
+                  alt="Kit Coleção 5 Cores Raras"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
 
