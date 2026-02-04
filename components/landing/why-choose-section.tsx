@@ -76,13 +76,13 @@ export function WhyChooseSection() {
 
           {/* Right Content - Product Image */}
           <div className="flex-1">
-            <div className="relative w-full max-w-lg mx-auto">
+            <div className="relative w-full md:max-w-lg mx-auto">
               <Image
                 src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Section%20de%20beneficios.png"
                 alt="Kit Completo de Rosas do Deserto Adultas"
-                width={600}
-                height={600}
-                className="rounded-lg shadow-lg object-cover"
+                width={800}
+                height={800}
+                className="rounded-lg shadow-lg object-cover w-full"
               />
             </div>
           </div>
