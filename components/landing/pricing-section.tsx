@@ -67,7 +67,7 @@ export function PricingSection() {
                 href="#"
                 className="block w-full text-center bg-white border-2 border-foreground text-foreground font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition-colors text-sm"
               >
-                Eu quero meu kit
+                GARANTIR MEU KIT
               </a>
             </div>
           </div>
@@ -125,7 +125,7 @@ export function PricingSection() {
                 href="#"
                 className="block w-full text-center bg-[#2d8f47] hover:bg-[#236b38] text-white font-semibold py-3 px-6 rounded-md transition-colors text-sm"
               >
-                Eu quero meu kit
+                GARANTIR MEU KIT EM DOBRO
               </a>
             </div>
           </div>
