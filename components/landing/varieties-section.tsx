@@ -1,11 +1,11 @@
 import Image from "next/image"
 
 const roseVarieties = [
-  { src: "/images/rosa-pink.jpg", label: "Amarela" },
-  { src: "/images/rosa-red.jpg", label: "Branca" },
-  { src: "/images/rosa-purple.jpg", label: "Vermelha" },
-  { src: "/images/rosa-multicolor.jpg", label: "Roxa" },
-  { src: "/images/rosa-multicolor.jpg", label: "Negra" },
+  { src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/RD%20amarela.png", label: "Amarela" },
+  { src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/RD%20branca.png", label: "Branca" },
+  { src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/RD%20vermelha.png", label: "Vermelha" },
+  { src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/RD%20roxa.png", label: "Roxa" },
+  { src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/RD%20negra.png", label: "Negra" },
 ]
 
 export function VarietiesSection() {
@@ -22,19 +22,19 @@ export function VarietiesSection() {
           </p>
 
           {/* Rose Varieties Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4">
             {roseVarieties.map((variety, index) => (
               <div key={index} className="relative group">
-                <div className="aspect-square overflow-hidden rounded-lg">
+                <div className="aspect-square overflow-hidden rounded-lg shadow-md">
                   <Image
                     src={variety.src || "/placeholder.svg"}
                     alt={`Rosa do Deserto ${variety.label}`}
-                    width={200}
-                    height={200}
+                    width={300}
+                    height={300}
                     className="w-full h-full object-cover transition-transform group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
+                <div className="absolute bottom-3 left-3 bg-black/70 text-white text-sm md:text-xs px-3 py-1.5 md:py-1 rounded font-medium">
                   {variety.label}
                 </div>
               </div>
