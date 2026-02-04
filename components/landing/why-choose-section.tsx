@@ -78,7 +78,7 @@ export function WhyChooseSection() {
           <div className="flex-1">
             <div className="relative w-full max-w-sm mx-auto">
               <Image
-                src="/images/kit-product.jpg"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Section%20de%20beneficios.png"
                 alt="Kit Completo de Rosas do Deserto Adultas"
                 width={400}
                 height={400}
