@@ -13,11 +13,11 @@ const seedImages = [
 ]
 
 const features = [
-  "20 sementes da espécie adenium obesum",
-  "1 bandeja germinadora com 40 células",
-  "20g de fertilizante e fungicida orgânico feito de cal hidratada que é solúvel em 2 litros de água",
-  "40g de substrato à base de composto orgânico para germinação",
-  "Manual de plantio com o passo a passo do processo de germinação",
+  "5 Rosas do Deserto Adultas (30 a 40cm) prontas para florir",
+  "Cores Garantidas: 1 Amarela, 1 Branca, 1 Vermelha, 1 Roxa e 1 Negra",
+  "Caudex Bem Formado: Base grossa e escultural",
+  "Sanidade Total: Livres de pragas e tratadas com fungicida",
+  "Envio Técnico: Preparadas em Raiz Nua para aguentar a viagem",
 ]
 
 export function FeaturesSection() {
@@ -43,11 +43,11 @@ export function FeaturesSection() {
           {/* Features List */}
           <div className="flex-1">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-2">
-              Um mix completo para quem ama rosas de cores raras e exclusivas
+              O que vem no seu Kit Premium de 5 Cores?
             </h2>
             
             <p className="text-muted-foreground text-sm md:text-base mb-6 leading-relaxed">
-              Nosso mix de sementes possui uma variedade autêntica de possíveis colorações, entre elas muitas cores raras como rosas negras, violetas, vermelho sangue e outras, mesmo que em menor porcentagem. Então conheça o que vem no nosso kit:
+              Diferente das sementes, onde a cor é uma 'loteria', nossas plantas são Enxertadas. Você recebe exatamente as cores que comprou, com garantia genética.
             </p>
 
             <ul className="space-y-3">
