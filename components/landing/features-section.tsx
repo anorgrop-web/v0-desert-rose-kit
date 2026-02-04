@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Check } from "lucide-react"
 
 const seedImages = [
-  "/images/seeds-1.jpg",
+  "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/mosaico%20%281%29.webp",
   "/images/seeds-2.jpg",
   "/images/seeds-3.jpg",
   "/images/seeds-4.jpg",
