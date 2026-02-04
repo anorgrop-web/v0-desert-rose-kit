@@ -87,7 +87,7 @@ export function PricingSection() {
               {/* Product Image */}
               <div className="w-full max-w-md mx-auto mb-6">
                 <Image
-                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Oferta%201.png"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Group%201105.png"
                   alt="Kit Coleção 5 Cores Raras"
                   width={800}
                   height={800}
