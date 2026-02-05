@@ -5,7 +5,7 @@ const kit1Features = [
   "5 Plantas Adultas Enxertadas",
   "Cores: Amarela, Branca, Vermelha, Roxa, Negra",
   "Manual de Re-hidratação e Plantio",
-  "Garantia de Entrega Viva"
+  "Garantia de Entrega Viva",
   "Fertilizante, Fungicída e Susbtrato adequado",
   "Suporte 7 dias por semana",
 ]
@@ -14,7 +14,7 @@ const kit2Features = [
   "10 Plantas Adultas Enxertadas",
   "Cores: Amarela, Branca, Vermelha, Roxa, Negra",
   "Manual de Re-hidratação e Plantio",
-  "Garantia de Entrega Viva"
+  "Garantia de Entrega Viva",
   "Fertilizante, Fungicída e Susbtrato adequado em dobro",
   "Frete Grátis para todo Brasil",
   "Suporte 7 dias por semana",
