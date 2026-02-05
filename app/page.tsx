@@ -1,5 +1,6 @@
 import {
   HeroSection,
+  VideoSection,
   FeaturesSection,
   VarietiesSection,
   WhyChooseSection,
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
+      <VideoSection />
       <FeaturesSection />
       <VarietiesSection />
       <WhyChooseSection />

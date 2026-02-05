@@ -1,4 +1,5 @@
 export { HeroSection } from "./hero-section"
+export { VideoSection } from "./video-section"
 export { FeaturesSection } from "./features-section"
 export { VarietiesSection } from "./varieties-section"
 export { WhyChooseSection } from "./why-choose-section"
