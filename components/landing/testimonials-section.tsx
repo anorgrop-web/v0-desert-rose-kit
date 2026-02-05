@@ -16,11 +16,109 @@ const videos = [
   { id: "p8Aq46mp06A" },
 ]
 
+declare global {
+  interface Window {
+    YT: typeof YT
+    onYTPlayersReady: (() => void) | undefined
+  }
+}
+
 export function TestimonialsSection() {
   const [api, setApi] = useState<CarouselApi>()
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [unmutedIndex, setUnmutedIndex] = useState<number | null>(null)
+  const playersRef = useRef<(YT.Player | null)[]>([])
+  const pollIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const unmutedStartTimeRef = useRef<number | null>(null)
   const iframeRefs = useRef<(HTMLIFrameElement | null)[]>([])
+  const ytReadyRef = useRef(false)
+
+  // Load YT IFrame API script once
+  useEffect(() => {
+    if (window.YT && window.YT.Player) {
+      ytReadyRef.current = true
+      return
+    }
+    const tag = document.createElement("script")
+    tag.src = "https://www.youtube.com/iframe_api"
+    document.head.appendChild(tag)
+    window.onYTPlayersReady = () => {
+      ytReadyRef.current = true
+    }
+    ;(window as any).onYouTubeIframeAPIReady = () => {
+      ytReadyRef.current = true
+      window.onYTPlayersReady?.()
+    }
+  }, [])
+
+  // Initialize YT.Player instances from existing iframes
+  useEffect(() => {
+    const initPlayers = () => {
+      if (!ytReadyRef.current || !window.YT?.Player) return
+      iframeRefs.current.forEach((iframe, index) => {
+        if (iframe && !playersRef.current[index]) {
+          try {
+            playersRef.current[index] = new window.YT.Player(iframe)
+          } catch { /* player already initialized */ }
+        }
+      })
+    }
+    const timer = setTimeout(initPlayers, 2000)
+    window.onYTPlayersReady = initPlayers
+    return () => clearTimeout(timer)
+  }, [])
+
+  // Poll to detect when video completes one cycle while unmuted
+  useEffect(() => {
+    if (unmutedIndex === null) {
+      if (pollIntervalRef.current) {
+        clearInterval(pollIntervalRef.current)
+        pollIntervalRef.current = null
+      }
+      unmutedStartTimeRef.current = null
+      return
+    }
+
+    const player = playersRef.current[unmutedIndex]
+    if (!player || typeof player.getCurrentTime !== "function") return
+
+    const startTime = player.getCurrentTime()
+    unmutedStartTimeRef.current = startTime
+    let hasAdvanced = false
+
+    pollIntervalRef.current = setInterval(() => {
+      try {
+        const currentTime = player.getCurrentTime()
+        const duration = player.getDuration()
+        if (!duration || duration <= 0) return
+
+        // Mark that the video has advanced past the start
+        if (currentTime > startTime + 2) {
+          hasAdvanced = true
+        }
+
+        // If the video looped back (currentTime wrapped around after advancing)
+        const nearEnd = currentTime >= duration - 1
+        const wrappedAround = hasAdvanced && currentTime < startTime - 1
+
+        if (nearEnd || wrappedAround) {
+          player.mute()
+          setUnmutedIndex(null)
+          if (pollIntervalRef.current) {
+            clearInterval(pollIntervalRef.current)
+            pollIntervalRef.current = null
+          }
+        }
+      } catch { /* player not ready */ }
+    }, 500)
+
+    return () => {
+      if (pollIntervalRef.current) {
+        clearInterval(pollIntervalRef.current)
+        pollIntervalRef.current = null
+      }
+    }
+  }, [unmutedIndex])
 
   const onSelect = useCallback(() => {
     if (!api) return
@@ -47,13 +145,31 @@ export function TestimonialsSection() {
 
   const toggleMuteForVideo = (index: number) => {
     if (unmutedIndex === index) {
-      sendCommand(iframeRefs.current[index], "mute")
+      // Mute via player API and postMessage fallback
+      const player = playersRef.current[index]
+      if (player && typeof player.mute === "function") {
+        player.mute()
+      } else {
+        sendCommand(iframeRefs.current[index], "mute")
+      }
       setUnmutedIndex(null)
     } else {
+      // Mute previously active video
       if (unmutedIndex !== null) {
-        sendCommand(iframeRefs.current[unmutedIndex], "mute")
+        const prevPlayer = playersRef.current[unmutedIndex]
+        if (prevPlayer && typeof prevPlayer.mute === "function") {
+          prevPlayer.mute()
+        } else {
+          sendCommand(iframeRefs.current[unmutedIndex], "mute")
+        }
       }
-      sendCommand(iframeRefs.current[index], "unMute")
+      // Unmute selected video
+      const player = playersRef.current[index]
+      if (player && typeof player.unMute === "function") {
+        player.unMute()
+      } else {
+        sendCommand(iframeRefs.current[index], "unMute")
+      }
       setUnmutedIndex(index)
     }
   }
