@@ -1,9 +1,11 @@
 import {
   HeroSection,
+  VideoSection,
   FeaturesSection,
   VarietiesSection,
   WhyChooseSection,
   ManualSection,
+  AboutSection,
   TestimonialsSection,
   PricingSection,
   FaqSection,
@@ -14,10 +16,12 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
+      <VideoSection />
       <FeaturesSection />
       <VarietiesSection />
       <WhyChooseSection />
       <ManualSection />
+      <AboutSection />
       <TestimonialsSection />
       <PricingSection />
       <FaqSection />

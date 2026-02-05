@@ -2,21 +2,20 @@ import Image from "next/image"
 import { Check } from "lucide-react"
 
 const kit1Features = [
-  "20 Sementes de Rosa do Deserto Mix",
-  "Bandeja Germinadora 40 células",
-  "Fertilizante + Fungicida 20g",
-  "Substrato para germinação 40g",
-  "Manual de Germinação",
+  "5 Plantas Adultas Enxertadas",
+  "Cores: Amarela, Branca, Vermelha, Roxa, Negra",
+  "Manual de Re-hidratação e Plantio",
+  "Garantia de Entrega Viva",
+  "Suporte 7 dias por semana",
 ]
 
 const kit2Features = [
-  "60 Sementes de Rosa do Deserto Mix",
-  "Bandeja Germinadora 40 células",
-  "FRETE GRÁTIS",
-  "Fertilizante + Fungicida 40g",
-  "Substrato para germinação 40g",
-  "Manual de Germinação",
-  "+ 50 Sacos de muda",
+  "5 Plantas Adultas Enxertadas",
+  "Cores: Amarela, Branca, Vermelha, Roxa, Negra",
+  "Manual de Re-hidratação e Plantio",
+  "Garantia de Entrega Viva",
+  "Frete Grátis para todo Brasil",
+  "Suporte 7 dias por semana",
 ]
 
 export function PricingSection() {
@@ -29,17 +28,17 @@ export function PricingSection() {
             <div className="p-6 md:p-8">
               {/* Title */}
               <h3 className="text-xl md:text-2xl font-bold text-[#2d8f47] text-center mb-4">
-                Kit Florescer<br/>Rosas do Deserto
+                Kit Simples - Coleção<br/>5 Cores Raras
               </h3>
               
               {/* Product Image */}
-              <div className="w-40 h-40 mx-auto mb-6">
+              <div className="w-full max-w-md mx-auto mb-6">
                 <Image
-                  src="/images/kit-product.jpg"
-                  alt="Kit Florescer Rosas do Deserto"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover rounded-lg"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Oferta%201.png"
+                  alt="Kit Coleção 5 Cores Raras"
+                  width={800}
+                  height={800}
+                  className="w-full h-auto object-contain"
                 />
               </div>
 
@@ -47,7 +46,7 @@ export function PricingSection() {
               <div className="text-center mb-6">
                 <p className="text-muted-foreground text-sm mb-1">Tudo isso por apenas</p>
                 <p className="text-3xl md:text-4xl font-bold text-foreground">
-                  R$ 69,90
+                  R$ 199,90
                 </p>
               </div>
 
@@ -68,7 +67,7 @@ export function PricingSection() {
                 href="#"
                 className="block w-full text-center bg-white border-2 border-foreground text-foreground font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition-colors text-sm"
               >
-                Eu quero meu kit
+                GARANTIR MEU KIT
               </a>
             </div>
           </div>
@@ -83,28 +82,27 @@ export function PricingSection() {
             <div className="p-6 md:p-8">
               {/* Title */}
               <h3 className="text-xl md:text-2xl font-bold text-[#2d8f47] text-center mb-4">
-                Kit 2 Florescer<br/>Rosas do Deserto
+                Kit em Dobro - Coleção<br/>5 Cores Raras
               </h3>
               
               {/* Product Image */}
-              <div className="w-40 h-40 mx-auto mb-6">
+              <div className="w-full max-w-md mx-auto mb-6">
                 <Image
-                  src="/images/kit-product.jpg"
-                  alt="Kit 2 Florescer Rosas do Deserto"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover rounded-lg"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/Group%201105.png"
+                  alt="Kit Coleção 5 Cores Raras"
+                  width={800}
+                  height={800}
+                  className="w-full h-auto object-contain"
                 />
               </div>
 
               {/* Price */}
               <div className="text-center mb-6">
                 <p className="text-muted-foreground text-sm mb-1">
-                  Tudo isso por apenas +{" "}
-                  <span className="font-semibold text-[#2d8f47]">FRETE GRÁTIS</span>
+                  Tudo isso por apenas
                 </p>
                 <p className="text-3xl md:text-4xl font-bold text-foreground">
-                  R$ 99,90
+                  R$ 199,90
                 </p>
               </div>
 
@@ -127,7 +125,7 @@ export function PricingSection() {
                 href="#"
                 className="block w-full text-center bg-[#2d8f47] hover:bg-[#236b38] text-white font-semibold py-3 px-6 rounded-md transition-colors text-sm"
               >
-                Eu quero meu kit
+                GARANTIR MEU KIT EM DOBRO
               </a>
             </div>
           </div>

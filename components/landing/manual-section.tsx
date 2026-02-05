@@ -8,11 +8,11 @@ export function ManualSection() {
           {/* Left Content */}
           <div className="flex-1 text-white">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-4 text-balance">
-              Garanta o sucesso no plantio das suas Rosas do Deserto
+              Recebeu? Saiba exatamente como plantar.
             </h2>
             
             <p className="text-white/90 text-sm md:text-base leading-relaxed max-w-md">
-              Não se preocupe com a germinação das suas sementes. Nosso kit inclui um manual completo de plantio para ajudá-lo a ter sucesso.
+              Não se preocupe com o transporte. Enviamos junto um Guia de Re-hidratação. Ensinamos como 'acordar' sua Rosa do Deserto após a viagem em raiz nua e preparar o vaso ideal.
             </p>
           </div>
 

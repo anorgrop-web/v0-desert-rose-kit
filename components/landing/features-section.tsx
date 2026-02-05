@@ -3,21 +3,12 @@
 import Image from "next/image"
 import { Check } from "lucide-react"
 
-const seedImages = [
-  "/images/seeds-1.jpg",
-  "/images/seeds-2.jpg",
-  "/images/seeds-3.jpg",
-  "/images/seeds-4.jpg",
-  "/images/seeds-5.jpg",
-  "/images/seeds-6.jpg",
-]
-
 const features = [
-  "20 sementes da espécie adenium obesum",
-  "1 bandeja germinadora com 40 células",
-  "20g de fertilizante e fungicida orgânico feito de cal hidratada que é solúvel em 2 litros de água",
-  "40g de substrato à base de composto orgânico para germinação",
-  "Manual de plantio com o passo a passo do processo de germinação",
+  "5 Rosas do Deserto Adultas (30 a 40cm) prontas para florir",
+  "Cores Garantidas: Amarela, Branca, Vermelha, Roxa e Negra",
+  "Caudex Bem Formado: Base grossa e escultural",
+  "Sanidade Total: Livres de pragas e tratadas com fungicida",
+  "Envio Técnico: Preparadas em Raiz Nua para aguentar a viagem",
 ]
 
 export function FeaturesSection() {
@@ -25,19 +16,17 @@ export function FeaturesSection() {
     <section className="bg-[#f5f5dc] py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          {/* Seed Grid */}
-          <div className="grid grid-cols-2 gap-2 max-w-xs">
-            {seedImages.map((src, index) => (
-              <div key={index} className="aspect-square overflow-hidden rounded-md">
-                <Image
-                  src={src || "/placeholder.svg"}
-                  alt={`Sementes de Rosa do Deserto ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+          {/* Single Image */}
+          <div className="w-full md:w-auto md:flex-shrink-0">
+            <div className="max-w-md mx-auto overflow-hidden rounded-lg">
+              <Image
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/mosaico%20%281%29.webp"
+                alt="Kit de Rosas do Deserto - Mosaico de Cores"
+                width={400}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
 
           {/* Features List */}
@@ -47,7 +36,7 @@ export function FeaturesSection() {
             </h2>
             
             <p className="text-muted-foreground text-sm md:text-base mb-6 leading-relaxed">
-              Nosso mix de sementes possui uma variedade autêntica de possíveis colorações, entre elas muitas cores raras como rosas negras, violetas, vermelho sangue e outras, mesmo que em menor porcentagem. Então conheça o que vem no nosso kit:
+              Diferente das sementes, onde a cor é uma 'loteria', nossas plantas são Enxertadas. Você recebe exatamente as cores que comprou, com garantia genética.
             </p>
 
             <ul className="space-y-3">

@@ -18,18 +18,18 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4 text-balance">
-              Embeleze sua casa com cores vibrantes e únicas: conheça o Kit de Germinação de Rosas do Deserto
+              Tenha um Jardim de Explosão de Cores em Dias: Receba Rosas do Deserto Adultas e Prontas para Florir
             </h1>
             
             <p className="text-white/90 text-sm md:text-base mb-6 leading-relaxed max-w-md">
-              Comece do zero e vire quem ama colecionar. Tenha em suas mãos sementes produtivas, a bandeja germinadora, fertilizante para crescer delas flores exóticas e raras em sua própria casa.
+              Chega de esperar anos. Nossas matrizes possuem caudex robusto, raízes formadas e genética de cores raras garantida por enxertia.
             </p>
 
             <a 
               href="#pricing"
               className="inline-block bg-[#f5a623] hover:bg-[#e69500] text-black font-semibold py-3 px-8 rounded-md transition-colors text-sm md:text-base"
             >
-              Adquira seu Kit
+              Quero Meu Kit Adulto
             </a>
           </div>
 
@@ -37,7 +37,7 @@ export function HeroSection() {
           <div className="flex-1 relative">
             <div className="relative w-full max-w-md mx-auto">
               <Image
-                src="/images/hero-product.jpg"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/imagem%20hero.png"
                 alt="Kit de Germinação de Rosas do Deserto - Manual, sementes, bandeja e fertilizante"
                 width={500}
                 height={400}
