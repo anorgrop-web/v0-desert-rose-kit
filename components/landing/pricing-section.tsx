@@ -46,7 +46,7 @@ export function PricingSection() {
               <div className="text-center mb-6">
                 <p className="text-muted-foreground text-sm mb-1">Tudo isso por apenas</p>
                 <p className="text-3xl md:text-4xl font-bold text-foreground">
-                  R$ 199,90
+                  R$ 69,90
                 </p>
               </div>
 
@@ -102,7 +102,7 @@ export function PricingSection() {
                   Tudo isso por apenas
                 </p>
                 <p className="text-3xl md:text-4xl font-bold text-foreground">
-                  R$ 199,90
+                  R$ 104,90
                 </p>
               </div>
 
