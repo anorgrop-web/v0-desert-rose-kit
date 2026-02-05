@@ -83,7 +83,7 @@ export default function PoliticaDePrivacidadePage() {
                 </p>
                 <p>
                   <strong>E-mail:</strong>{" "}
-                  <a href="mailto:info@jardimdacida.com.br" className="text-[#2d8f47] hover:underline">
+                  <a href="mailto:info@jardimdacida.com" className="text-[#2d8f47] hover:underline">
                     info@jardimdacida.com
                   </a>
                 </p>
