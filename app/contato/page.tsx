@@ -47,7 +47,7 @@ export default function ContatoPage() {
                       href="mailto:info@jardimdacida.com.br"
                       className="text-[#2d8f47] hover:underline text-sm font-medium"
                     >
-                      info@jardimdacida.com.br
+                      info@jardimdacida.com
                     </a>
                     <p className="text-gray-600 text-sm mt-2">
                       Responderemos em até 24 horas úteis.
