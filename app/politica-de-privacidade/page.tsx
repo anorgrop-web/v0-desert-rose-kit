@@ -84,7 +84,7 @@ export default function PoliticaDePrivacidadePage() {
                 <p>
                   <strong>E-mail:</strong>{" "}
                   <a href="mailto:info@jardimdacida.com.br" className="text-[#2d8f47] hover:underline">
-                    info@jardimdacida.com.br
+                    info@jardimdacida.com
                   </a>
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function PoliticaDePrivacidadePage() {
                 <strong>Anor Commerce LLC</strong><br />
                 1209 Mountain Road Place Northeast<br />
                 Albuquerque, New Mexico, 87110, USA<br />
-                E-mail: info@jardimdacida.com.br
+                E-mail: info@jardimdacida.com
               </p>
             </div>
           </div>
