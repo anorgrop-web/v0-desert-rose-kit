@@ -28,7 +28,7 @@ export function FooterSection() {
                   href="mailto:info@jardimdacida.com.br" 
                   className="text-white hover:text-[#2d8f47] transition-colors text-sm"
                 >
-                  info@jardimdacida.com.br
+                  info@jardimdacida.com
                 </a>
               </div>
             </div>
