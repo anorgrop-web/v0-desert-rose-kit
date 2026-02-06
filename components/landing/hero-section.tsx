@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Star } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -7,14 +8,15 @@ export function HeroSection() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Left Content */}
           <div className="flex-1 text-white">
-            {/* Logo */}
-            <div className="mb-6">
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-[#2d8f47] font-bold text-xs">JC</span>
-                </div>
-                <span className="text-white font-semibold text-sm">Jardim<br/>da Cida</span>
+            {/* Stars Rating */}
+            <div className="flex items-center gap-2 mb-4">
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-[#f5a623] text-[#f5a623]" />
+                ))}
               </div>
+              <span className="text-white font-bold text-sm">4.7</span>
+              <span className="text-white/70 text-sm">| Mais de 1000 avaliacoes verificadas</span>
             </div>
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4 text-balance">
@@ -25,12 +27,15 @@ export function HeroSection() {
               Chega de esperar anos. Nossas matrizes possuem caudex robusto, raízes formadas e genética de cores raras garantida por enxertia.
             </p>
 
-            <a 
-              href="#pricing"
-              className="inline-block bg-[#f5a623] hover:bg-[#e69500] text-black font-semibold py-3 px-8 rounded-md transition-colors text-sm md:text-base"
-            >
-              Quero Meu Kit Adulto
-            </a>
+            {/* CTA - hidden on mobile, shown on desktop */}
+            <div className="hidden md:flex justify-center md:justify-start">
+              <a 
+                href="#pricing"
+                className="animate-pulse-cta inline-block bg-[#f5a623] hover:bg-[#e69500] text-black font-bold py-4 px-10 rounded-md transition-colors text-base md:text-lg uppercase tracking-wide"
+              >
+                QUERO MEU KIT ADULTO
+              </a>
+            </div>
           </div>
 
           {/* Right Content - Product Image */}
@@ -38,7 +43,7 @@ export function HeroSection() {
             <div className="relative w-full max-w-md mx-auto">
               <Image
                 src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/RD/imagem%20hero.png"
-                alt="Kit de Germinação de Rosas do Deserto - Manual, sementes, bandeja e fertilizante"
+                alt="Kit de Rosas do Deserto Adultas - Coleção 5 Cores Raras"
                 width={500}
                 height={400}
                 className="rounded-lg shadow-xl object-cover"
@@ -46,6 +51,16 @@ export function HeroSection() {
               />
             </div>
           </div>
+        </div>
+
+        {/* CTA - shown on mobile below image, hidden on desktop */}
+        <div className="flex md:hidden justify-center mt-6">
+          <a 
+            href="#pricing"
+            className="animate-pulse-cta inline-block bg-[#f5a623] hover:bg-[#e69500] text-black font-bold py-4 px-10 rounded-md transition-colors text-base uppercase tracking-wide"
+          >
+            QUERO MEU KIT ADULTO
+          </a>
         </div>
       </div>
     </section>

@@ -42,11 +42,32 @@ export function VideoSection() {
   const [isMuted, setIsMuted] = useState(true)
   const [playerReady, setPlayerReady] = useState(false)
   const [apiLoaded, setApiLoaded] = useState(false)
+  const [shouldLoad, setShouldLoad] = useState(false)
   const playerRef = useRef<YTPlayer | null>(null)
   const videoContainerRef = useRef<HTMLDivElement>(null)
 
-  // Load YouTube IFrame API
+  // Lazy load: only load YouTube API when section is near viewport
   useEffect(() => {
+    if (!videoContainerRef.current) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoad(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: "200px" }
+    )
+
+    observer.observe(videoContainerRef.current)
+    return () => observer.disconnect()
+  }, [])
+
+  // Load YouTube IFrame API only when section is visible
+  useEffect(() => {
+    if (!shouldLoad) return
+
     if (typeof window !== "undefined" && !window.YT) {
       const tag = document.createElement("script")
       tag.src = "https://www.youtube.com/iframe_api"
@@ -59,7 +80,7 @@ export function VideoSection() {
     } else if (window.YT) {
       setApiLoaded(true)
     }
-  }, [])
+  }, [shouldLoad])
 
   // Initialize player when API is ready
   useEffect(() => {
@@ -150,10 +171,21 @@ export function VideoSection() {
         >
           {/* Aspect Ratio Container */}
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            {/* Loading Skeleton */}
+            {/* Loading Facade - YouTube Thumbnail */}
             {!playerReady && (
-              <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
-                <div className="text-gray-500 text-lg">Carregando video...</div>
+              <div className="absolute inset-0 bg-gray-900 flex items-center justify-center">
+                <img
+                  src={`https://img.youtube.com/vi/${VIDEO_ID}/hqdefault.jpg`}
+                  alt="Thumbnail do video"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-red-600 rounded-2xl flex items-center justify-center animate-pulse">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 md:w-10 md:h-10 text-white fill-current ml-1">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             )}
 

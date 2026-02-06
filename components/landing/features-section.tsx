@@ -13,7 +13,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="bg-[#f5f5dc] py-12 md:py-16">
+    <section id="caracteristicas" className="bg-[#f5f5dc] py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           {/* Single Image */}

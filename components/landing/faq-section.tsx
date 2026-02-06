@@ -5,20 +5,16 @@ import { ChevronRight } from "lucide-react"
 
 const faqs = [
   {
-    question: "Por que elas vêm sem terra e vaso (Raiz Nua)?",
-    answer: "Para garantir a segurança. A terra úmida em caixa fechada pode apodrecer as raízes. Elas aguentam até 20 dias fora da terra tranquilamente."
+    question: "O as plantas do Kit já vem com flores",
+    answer: "Sim, desenvolvemos um método com caixa rígida que garante que suas plantes já vão chegar floridas."
   },
   {
-    question: "Elas já chegam com flor?",
-    answer: "Geralmente enviamos sem folhas e flores para evitar o estresse da viagem. Mas como são adultas, assim que replantadas, voltam a florir rapidamente."
+    question: "Se as plantas chegarem danificadas, tenho garantia?",
+    answer: "Damos garantia de saúde de cada unidade e também garatia de transporte. Ou seja, se suas plantas chegarem com algum tipo de avaria, nós enviamos outra para você."
   },
   {
     question: "O que é o Jardim da Cida?",
     answer: "O Jardim da Cida é uma empresa especializada em produtos para jardinagem e cultivo de plantas exóticas, como as Rosas do Deserto. Oferecemos kits completos de plantas adultas enxertadas com garantia de cor."
-  },
-  {
-    question: "Em quanto tempo vou receber minha compra?",
-    answer: "Sim! Após a confirmação do pagamento, você receberá um código de rastreamento para acompanhar sua entrega em tempo real pelos Correios ou transportadora."
   },
 ]
 
@@ -30,7 +26,7 @@ export function FaqSection() {
   }
 
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section id="perguntas" className="bg-background py-12 md:py-16">
       <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-16">
         <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
           Perguntas frequentes

@@ -1,3 +1,4 @@
+export { HeaderSection } from "./header-section"
 export { HeroSection } from "./hero-section"
 export { VideoSection } from "./video-section"
 export { FeaturesSection } from "./features-section"
