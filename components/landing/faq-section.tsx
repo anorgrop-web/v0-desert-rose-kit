@@ -5,12 +5,12 @@ import { ChevronRight } from "lucide-react"
 
 const faqs = [
   {
-    question: "Por que elas vêm sem terra e vaso (Raiz Nua)?",
-    answer: "Para garantir a segurança. A terra úmida em caixa fechada pode apodrecer as raízes. Elas aguentam até 20 dias fora da terra tranquilamente."
+    question: "O as plantas do Kit já vem com flores",
+    answer: "Sim, desenvolvemos um método com caixa rígida que garante que suas plantes já vão chegar floridas."
   },
   {
-    question: "Elas já chegam com flor?",
-    answer: "Geralmente enviamos sem folhas e flores para evitar o estresse da viagem. Mas como são adultas, assim que replantadas, voltam a florir rapidamente."
+    question: "Se as plantas chegarem danificadas, tenho garantia?",
+    answer: "Damos garantia de saúde de cada unidade e também garatia de transporte. Ou seja, se suas plantas chegarem com algum tipo de avaria, nós enviamos outra para você."
   },
   {
     question: "O que é o Jardim da Cida?",
