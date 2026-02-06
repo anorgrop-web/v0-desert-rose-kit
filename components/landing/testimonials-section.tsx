@@ -175,7 +175,7 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section id="avaliacoes" className="bg-background py-12 md:py-16">
       <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
         {/* Stars */}
         <div className="flex justify-center gap-1 mb-4">

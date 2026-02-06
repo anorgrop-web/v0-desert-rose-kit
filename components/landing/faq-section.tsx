@@ -30,7 +30,7 @@ export function FaqSection() {
   }
 
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section id="perguntas" className="bg-background py-12 md:py-16">
       <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-16">
         <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
           Perguntas frequentes

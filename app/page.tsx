@@ -1,4 +1,5 @@
 import {
+  HeaderSection,
   HeroSection,
   VideoSection,
   FeaturesSection,
@@ -15,6 +16,7 @@ import {
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <HeaderSection />
       <HeroSection />
       <VideoSection />
       <FeaturesSection />

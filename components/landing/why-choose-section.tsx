@@ -30,7 +30,7 @@ const reasons = [
 
 export function WhyChooseSection() {
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section id="como-funciona" className="bg-background py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           {/* Left Content */}
@@ -66,12 +66,14 @@ export function WhyChooseSection() {
               ))}
             </ul>
 
-            <a 
-              href="#pricing"
-              className="inline-block bg-[#f5a623] hover:bg-[#e69500] text-black font-semibold py-3 px-8 rounded-md transition-colors text-sm md:text-base"
-            >
-              Adquira seu Kit
-            </a>
+            <div className="flex justify-center md:justify-start">
+              <a 
+                href="#pricing"
+                className="animate-pulse-cta inline-block bg-[#f5a623] hover:bg-[#e69500] text-black font-bold py-4 px-10 rounded-md transition-colors text-base md:text-lg uppercase tracking-wide"
+              >
+                QUERO MEU KIT ADULTO
+              </a>
+            </div>
           </div>
 
           {/* Right Content - Product Image */}

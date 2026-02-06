@@ -66,7 +66,9 @@ export function PricingSection() {
 
               {/* CTA Button */}
               <a 
-                href="#"
+                href="https://pagamento-seguro.jardimdacida.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-center bg-white border-2 border-foreground text-foreground font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition-colors text-sm"
               >
                 GARANTIR MEU KIT
@@ -124,7 +126,9 @@ export function PricingSection() {
 
               {/* CTA Button */}
               <a 
-                href="#"
+                href="https://pagamento-seguro.jardimdacida.com/carrinho/dobro"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-center bg-[#2d8f47] hover:bg-[#236b38] text-white font-semibold py-3 px-6 rounded-md transition-colors text-sm"
               >
                 GARANTIR MEU KIT EM DOBRO
