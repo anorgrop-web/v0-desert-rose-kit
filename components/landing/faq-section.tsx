@@ -16,10 +16,6 @@ const faqs = [
     question: "O que é o Jardim da Cida?",
     answer: "O Jardim da Cida é uma empresa especializada em produtos para jardinagem e cultivo de plantas exóticas, como as Rosas do Deserto. Oferecemos kits completos de plantas adultas enxertadas com garantia de cor."
   },
-  {
-    question: "Em quanto tempo vou receber minha compra?",
-    answer: "Sim! Após a confirmação do pagamento, você receberá um código de rastreamento para acompanhar sua entrega em tempo real pelos Correios ou transportadora."
-  },
 ]
 
 export function FaqSection() {
